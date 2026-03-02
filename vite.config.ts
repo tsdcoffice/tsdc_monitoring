@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     legacy()
   ],
-  base:"monitoring",
+  base:"tsdc_monitoring",
   test: {
     globals: true,
     environment: 'jsdom',
