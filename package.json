@@ -1,9 +1,9 @@
 {
-  "name": "monitoring",
+  "name": "tsdc_monitoring",
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://tsdcoffice.github.io/tsdc_monitoring/",
+  "homepage": "https://tsdcoffice.github.io/tsdc_monitoring",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

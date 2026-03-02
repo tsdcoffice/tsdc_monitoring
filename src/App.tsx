@@ -37,7 +37,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
 <IonApp>
-    <IonReactRouter>
+    <IonReactRouter basename="/tsdc_monitoring">
       <IonRouterOutlet>
         <Route exact path="/tsdc_monitoring" component={Login} />
       </IonRouterOutlet>
