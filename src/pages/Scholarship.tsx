@@ -23,6 +23,7 @@ const Scholarship: React.FC = () => {
     law: 18,
     medicine: 12,
     shs: 90,
+    hs: 110,
   };
 
   const totalScholars =
@@ -30,7 +31,8 @@ const Scholarship: React.FC = () => {
     scholarStats.college +
     scholarStats.law +
     scholarStats.medicine +
-    scholarStats.shs;
+    scholarStats.shs +
+    scholarStats.hs;
 
   const history = useHistory();
 
@@ -153,14 +155,29 @@ const Scholarship: React.FC = () => {
                   </IonCardContent>
                 </IonCard>
               </IonCol>
+
+              <IonCol size="12" sizeLg="4">
+                <IonCard
+                  button
+                  onClick={() => goToStudents("hs")}
+                  style={cardStyle("#2243ff")}
+                >
+                  <IonCardHeader>
+                    <IonCardTitle>HS Scholars</IonCardTitle>
+                  </IonCardHeader>
+                  <IonCardContent>
+                    <div style={numberStyle}>{scholarStats.hs}</div>
+                  </IonCardContent>
+                </IonCard>
+              </IonCol>
             </IonRow>
 
             <IonRow>
-              <IonCol size="12">
+              <IonCol size="12" sizeLg="4">
                 <IonCard
                   button
                   onClick={() => goToStudents("all")}
-                  style={cardStyle("#a2a9cb")}
+                  style={cardStyle("#ff4646")}
                 >
                   <IonCardHeader>
                     <IonCardTitle>Total Scholars</IonCardTitle>
